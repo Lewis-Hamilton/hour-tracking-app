@@ -1,32 +1,38 @@
 <template>
-  <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand to="/">Hour Tracker V 0.1</b-navbar-brand>
+<div>
+    <b-navbar class="ml-auto" fixed="bottom">
+        <router-link to="/">
+            <home-icon />
+        </router-link>
 
-      <b-navbar-toggle target="nav_collapse"/>
+        <router-link to="/">
+            <Finance-icon />
+        </router-link>
 
-      <b-collapse is-nav id="nav_collapse">
-        <b-navbar-nav>
-          <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="/projects">Projects</b-nav-item>
-          <b-nav-item to="/resume">Resume</b-nav-item>
-        </b-navbar-nav>
-
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown right>
-            <!-- Using button-content slot -->
-            <template slot="button-content">
-              <em>Sign in</em>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Signout</b-dropdown-item>
-          </b-nav-item-dropdown>
-        </b-navbar-nav>
-      </b-collapse>
+        <router-link to="/">
+            <Settings-icon />
+        </router-link>
     </b-navbar>
-  </div>
+</div>
 </template>
+
+<script>
+import HomeIcon from 'vue-material-design-icons/Home.vue'
+import FinanceIcon from 'vue-material-design-icons/Finance.vue'
+import SettingsIcon from 'vue-material-design-icons/Settings.vue'
+
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  components: {
+    HomeIcon,
+    FinanceIcon,
+    SettingsIcon
+  }
+}
+</script>
 
 <style scoped>
 </style>
