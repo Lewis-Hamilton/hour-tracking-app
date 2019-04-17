@@ -1,12 +1,11 @@
 <template>
   <div>
-      <span>{{ new Date() | moment("h:mm:ss a") }}</span>
-      <vue-clock />
+      <h1>{{CurrentTime}}</h1>
   </div>
 </template>
 
 <script>
-import VueClock from '@dangvanthanh/vue-clock'
+const moment = require('moment')
 
 export default {
   name: 'HelloWorld',
@@ -14,7 +13,18 @@ export default {
     msg: String
   },
   components: {
-    VueClock
+  },
+
+  data () {
+    return {
+      CurrentTime: ''
+    }
+  },
+  created () {
+    console.log(this.CurrentTime)
+    setInterval(() => {
+      this.CurrentTime = moment().format('h:mm:ss a')
+    }, 1000)
   }
 }
 </script>
