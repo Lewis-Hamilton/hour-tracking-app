@@ -1,10 +1,13 @@
 <template>
   <div>
       <h1>{{CurrentTime}}</h1>
+      <button v-on:click="logout">Logout</button>
   </div>
 </template>
 
 <script>
+import firebase from "firebase"
+import "../firebaseconfig.js"
 const moment = require('moment')
 
 export default {
@@ -29,8 +32,19 @@ export default {
 
   beforeDestroy () {
     clearInterval(this.CurrentTime)
+  },
+
+  methods: {
+    logout () {
+      firebase.auth().signOut()
+      .then( () =>  {
+        this.$router.push("/login")
+      })
+    }
   }
 }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
