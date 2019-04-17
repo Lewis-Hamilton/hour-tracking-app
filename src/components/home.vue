@@ -25,6 +25,10 @@ export default {
     setInterval(() => {
       this.CurrentTime = moment().format('h:mm:ss a')
     }, 1000)
+  },
+
+  beforeDestroy () {
+    clearInterval(this.CurrentTime)
   }
 }
 </script>
