@@ -58,10 +58,10 @@ export default{
   }
 
   .float-left{
-    margin: 5px 5px 5px 30px;
+    margin: 5px 5px 5px 10vw;
   }
 
   .float-right{
-    margin: 5px 30px 5px 5px;
+    margin: 5px 15vw 5px 5px;
   }
 </style>
