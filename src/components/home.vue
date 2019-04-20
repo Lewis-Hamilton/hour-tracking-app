@@ -1,7 +1,8 @@
 <template>
   <div>
+    <b-container>
       <h1>{{CurrentTime}}</h1>
-      <button v-on:click="logout">Logout</button>
+    </b-container>
   </div>
 </template>
 
@@ -33,18 +34,18 @@ export default {
   beforeDestroy () {
     clearInterval(this.CurrentTime)
   },
-
-  methods: {
-    logout () {
-      firebase.auth().signOut()
-      .then( () =>  {
-        this.$router.push("/login")
-      })
-    }
-  }
 }
 </script>
 
 <style scoped>
+.container{
+  width: 90vw;
+background-color: grey;
+margin: 20px;
+}
 
+.container h1{
+  color: white;
+  font-size: 15vw;
+}
 </style>

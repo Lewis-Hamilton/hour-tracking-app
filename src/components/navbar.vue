@@ -9,7 +9,7 @@
         <Finance-icon/>
       </router-link>
 
-      <router-link to="/">
+      <router-link to="/settings">
         <Settings-icon/>
       </router-link>
     </b-navbar>
