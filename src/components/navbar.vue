@@ -1,17 +1,17 @@
 <template>
-<div>
+  <div>
     <b-navbar class="ml-auto" fixed="bottom">
-        <router-link to="/">
-            <home-icon />
-        </router-link>
+      <router-link to="/">
+        <home-icon/>
+      </router-link>
 
-        <router-link to="/">
-            <Finance-icon />
-        </router-link>
+      <router-link to="/">
+        <Finance-icon/>
+      </router-link>
 
-        <router-link to="/">
-            <Settings-icon />
-        </router-link>
+      <router-link to="/">
+        <Settings-icon/>
+      </router-link>
     </b-navbar>
 </div>
 </template>
@@ -35,4 +35,25 @@ export default {
 </script>
 
 <style scoped>
+  .navbar{
+    background-color: grey;
+  }
+
+  .home-icon{
+    margin: 5px 9vw 5px 9vw;
+    font-size: 35px;
+    color: white;
+  }
+
+  .finance-icon{
+    margin: 5px 11vw 5px 11vw;
+    font-size: 35px;
+    color: white;
+  }
+
+  .settings-icon{
+    margin: 5px 9vw 5px 9vw;
+    font-size: 35px;
+    color: white;
+}
 </style>
