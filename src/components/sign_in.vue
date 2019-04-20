@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-container>
-            <b-form-input v-model="email" type="email" placeholder="email@gmail.com"></b-form-input>
+            <b-form-input v-model="email" type="email" placeholder="Email"></b-form-input>
             <b-form-input v-model="password" type="password" placeholder="Password"></b-form-input>
             <b-button v-on:click="login">Login</b-button>
         </b-container>
