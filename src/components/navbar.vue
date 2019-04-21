@@ -10,7 +10,7 @@
       </router-link>
 
       <router-link to="/settings">
-        <Settings-icon/>
+        <Settings-icon />
       </router-link>
     </b-navbar>
 </div>
@@ -22,10 +22,6 @@ import FinanceIcon from 'vue-material-design-icons/Finance.vue'
 import SettingsIcon from 'vue-material-design-icons/Settings.vue'
 
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
   components: {
     HomeIcon,
     FinanceIcon,

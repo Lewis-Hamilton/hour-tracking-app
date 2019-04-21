@@ -12,13 +12,6 @@ import "../firebaseconfig.js"
 const moment = require('moment')
 
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  components: {
-  },
-
   data () {
     return {
       CurrentTime: ''
@@ -39,13 +32,14 @@ export default {
 
 <style scoped>
 .container{
-  width: 90vw;
+width: 90vw;
 background-color: grey;
 margin: 20px;
+border-radius: 10px;
 }
 
 .container h1{
   color: white;
-  font-size: 15vw;
+  font-size: 14vw;
 }
 </style>
