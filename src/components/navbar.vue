@@ -2,15 +2,21 @@
   <div>
     <b-navbar class="ml-auto" fixed="bottom">
       <router-link to="/">
+      <div style="padding-right: 30px; padding-left: 77px; padding-top: 10px;">
         <home-icon/>
+        </div>
       </router-link>
 
       <router-link to="/">
+      <div style="padding-right: 40px; padding-left: 40px; padding-top: 10px;">
         <Finance-icon/>
+        </div>
       </router-link>
 
       <router-link to="/settings">
+      <div style="padding-left: 30px; padding-top: 10px;">
         <Settings-icon />
+        </div>
       </router-link>
     </b-navbar>
 </div>
@@ -36,19 +42,18 @@ export default {
   }
 
   .home-icon{
-    margin: 5px 9vw 5px 9vw;
+
     font-size: 35px;
     color: white;
   }
 
   .finance-icon{
-    margin: 5px 11vw 5px 11vw;
     font-size: 35px;
     color: white;
   }
 
   .settings-icon{
-    margin: 5px 9vw 5px 9vw;
+
     font-size: 35px;
     color: white;
 }

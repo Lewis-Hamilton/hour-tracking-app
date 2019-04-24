@@ -5,10 +5,13 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-material-design-icons/styles.css'
+import VueApexCharts from 'vue-apexcharts'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(require('vue-moment'))
+Vue.use(VueApexCharts)
+Vue.component('apexchart', VueApexCharts)
 
 new Vue({
   router,
